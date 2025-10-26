@@ -14,12 +14,17 @@
     <a href="https://google.com"> Click Here</a>
 
 
-    <table>
+    <!-- semantic tags are used to give meaning to the web page content -->
+    <!-- they are just used to structure the web page in a better way -->
+
+
+<header>  
+      <table>
       <!-- even if we would have not used style float left then the outcome would have been same -->
       <tr>
         <td>
           <a href="https://in.linkedin.com/in/karanbirsingh2110"><img
-            src="Karan.jpg"
+            src="./Karan.jpg"
             alt="Profile Picture"
             width="200"
             height="200"
@@ -34,16 +39,24 @@
           <!-- by default taget is _self -->
            <!-- which means the link will open in the same tab -->
           <p>I am a <a href="https://github.com/karanbir2110" target="_blank"><b> frontend developer </b> </a> </p>
-          <a href="#connectSection">Connect With Me Section</a>
-          <br>
-          <a href="#testing" target="_blank">Test</a>
+          <ul type="circle">
+            <li><a href="#connectSection">Connect With Me Section</a></li>
+            <li>          <a href="#Education" >Education</a></li>
+            <li>          <a href="#Work Experience"> Work Experience   </a></li>
+            <li>          <a href="#Projects"> Projects</a></li>
+ 
+          </ul>
         </td>
       </tr>
     </table>
 
     <hr />
+</header>
 
-    <h2>Education</h2>
+<main>
+
+    <section id="Education">
+        <h2>Education</h2>
     <table border="">
       <tr>
         <th>course</th>
@@ -64,11 +77,16 @@
         <td>88%</td>
       </tr>
     </table>
+    </section>
 
-    <h2>Work Experience</h2>
+    <section id="Work Experience">
+            <h2>Work Experience</h2>
 
+            
     <ul>
+        <article id="tutedude ">
       <li>
+        
         <p><b>Frontend Developer Intern at TuteDude</b></p>
         <p><i>Worked on multiple projects using HTML, CSS, JavaScript</i></p>
 
@@ -87,7 +105,9 @@
           </li>
         </ul>
       </li>
+</article>
 
+<article id="abcCompany">
       <li>
         <p><b>Web Developer Intern at ABC Company</b></p>
         <p>
@@ -106,37 +126,32 @@
           <li>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cum?
           </li>
+          
         </ul>
       </li>
+      </article>
     </ul>
+
+    
+    </section>
 
     <hr />
 
 
-    <!-- by default p tag starts from new line and takes full width -->
-
-    <!-- this is known as camel case notation -->
-    <!-- it means first letter of each word is capital except first word -->
-    <h2 id="connectSection">Connect with me</h2>
-    <p>Email:  <a href="mailto:abcd@gmail.com">abcd@gmail.com</a></p>
-    <p>Phone Number <a href="tel:9988919104">9988919104</a></p>
-    <p>LinkedIn: linkedin.com/in/karanbir</p>
-    <p>GitHub: github.com/karanbir</p>
-
-    <!-- now the page gets loaded with # in the end of url -->
-    <a href="#">Dummy</a>
-    <a href="8_aboutus.html" target ="_blank">Click here to get redirected </a>
-
-
-    <h2>Projects</h2>
+    <section id="Projects">
+         <h2>Projects</h2>
 
     <ul>
+        <article id="tomato">
       <li> <a href="https://tomato.com" target="_blank">Tomato</a>
         <ul>
           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, vero.</li>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore?</li>
         </ul>
       </li>
+      </article>
+
+        <article    id="potato">
 
       <li> <a href="https://potato.com" target="_blank">Potato</a> 
         <ul>
@@ -144,8 +159,35 @@
           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore?</li>
         </ul>
       </li>
+        </article>
     </ul>
 
+    </section>
+
+</main>
+    
+    <!-- by default p tag starts from new line and takes full width -->
+
+    <!-- this is known as camel case notation -->
+    <!-- it means first letter of each word is capital except first word -->
+
+    <footer id="footer">
+    <h2 id="connectSection">Connect with me</h2>
+    <p>Email:  <a href="mailto:abcd@gmail.com">abcd@gmail.com</a></p>
+    <p>Phone Number <a href="tel:9988919104">9988919104</a></p>
+    <p>LinkedIn: linkedin.com/in/karanbir</p>
+    <p>GitHub: github.com/karanbir</p>
+
+    <!-- now the page gets loaded with # in the end of url -->
+    <a href="#">Back to Top Page</a>
+    <!-- we can also use id of header tag instead of # -->
+    <!-- or leave it blank to go to top of the page -->
+    <br>
+
+    <a href="8_aboutus.html" target ="_blank">Click here to get redirected to about us section</a>
+
+</footer>
+   
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in aspernatur nesciunt vero minima eum a. Aperiam animi deleniti officia voluptatum eius quaerat, praesentium minus tempore magni doloribus optio magnam qui assumenda similique molestias nobis expedita pariatur, non quibusdam dolorem?
     Dignissimos dolor rem voluptatibus dolores aspernatur, possimus architecto, debitis quo harum cupiditate sed eveniet obcaecati, unde repellat nostrum modi delectus aperiam fugit velit voluptates quis molestiae nesciunt aut. Quo mollitia quam modi explicabo natus blanditiis dicta dolorem commodi laudantium voluptas!
@@ -550,4 +592,3 @@
     </p>
   </body>
 </html>
-
